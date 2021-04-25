@@ -50,7 +50,7 @@ def select():
 
 
 @app.route('/Insert', methods= ['POST'])
-def insert():
+def insert(name, lastname, address):
     try:
         mysqldb = connect()
         cursor =  mysqldb.cursor(buffered=True)
@@ -102,10 +102,10 @@ def delete(num):
 
 
 def main():
-    response_insert = insert()
+    response_insert = insert(Mir, Dik, Adana)
     response_select = select()
     response_delete = delete(1)
-    return (response_select)
+    return (response_insert)
 
 
 if __name__=="__main__":

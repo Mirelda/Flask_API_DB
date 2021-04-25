@@ -60,11 +60,11 @@ def insert(name, lastname, address):
     try:
         mysqldb = connect()
         cursor =  mysqldb.cursor(buffered=True)
-        query = f'''INSERT INTO {config['DEFAULT']['mysql_database']}.{config['DEFAULT']['mysql_table']}(name, lastname, address) VALUES ('{name}','{lastname}','{address}'); '''
+        query = f"""INSERT INTO {config['DEFAULT']['mysql_database']}.{config['DEFAULT']['mysql_table']}(name, lastname, address) VALUES ('{name}','{lastname}','{address}'); """
         cursor.execute(query)
         mysqldb.commit()
         mysqldb.close()
-    
+        
     except mysql.connector.Error as e:
         if(e.errno == errorcode.ER_ACCESS_DENIED_ERROR):
             logging.error(str(e))
@@ -83,13 +83,14 @@ def insert(name, lastname, address):
 
 
 @app.route('/Delete', methods= ['DELETE'])
-def delete(num):
-
-    num = request.args.get("num")
+def delete(id):
+    name =request.args.get("name")
+    lastname = request.args.get("lastname")
+    address = request.args.get("address")
     try:
         mysqldb = connect()
         cursor =  mysqldb.cursor(buffered=True)
-        query = f'''DELETE FROM {config['DEFAULT']['mysql_database']}.{config['DEFAULT']['mysql_table']}(name, lastname, address) WHERE id = {num}; '''
+        query = f'''DELETE FROM {config['DEFAULT']['mysql_database']}.{config['DEFAULT']['mysql_table']}(name, lastname, address) WHERE id = {id}; '''
         cursor.execute(query)
         mysqldb.commit()
         mysqldb.close()
@@ -118,4 +119,4 @@ def main():
 
 
 if __name__=="__main__":
-    app.run(host=config['APISERVER']['api_host'], port=config['APISERVER']['api_port'])
+    app.run(host=config['APISERVER']['api_host'], port=config['APISERVER']['api_port'], debug=True)

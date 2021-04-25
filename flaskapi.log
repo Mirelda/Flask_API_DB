@@ -78,3 +78,79 @@ ERROR:root:1146 (42S02): Table 'akademi.flask1' doesn't exist
 INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 13:43:51] "[31m[1mGET /Select HTTP/1.1[0m" 400 -
 INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
 INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 13:44:39] "[37mGET /Select HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 300-216-854
+INFO:werkzeug: * Detected change in '/home/mirel/DEVOPS EDU/python.hw/flaskapi.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 300-216-854
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:00:51] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:01:03] "[37mGET /Select HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:01:16] "[35m[1mPOST /Insert HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:03:03] "[35m[1mPOST /Insert HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:03:09] "[35m[1mPOST /Insert HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:03:13] "[35m[1mPOST /Insert HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:03:14] "[35m[1mPOST /Insert HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:03:14] "[35m[1mPOST /Insert HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:03:14] "[35m[1mPOST /Insert HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:03:14] "[35m[1mPOST /Insert HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:03:14] "[35m[1mPOST /Insert HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:03:25] "[31m[1mGET /Insert HTTP/1.1[0m" 405 -
+INFO:werkzeug: * Detected change in '/home/mirel/DEVOPS EDU/python.hw/flaskapi.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 300-216-854
+INFO:werkzeug: * Detected change in '/home/mirel/DEVOPS EDU/python.hw/flaskapi.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 300-216-854
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:12:22] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:12:31] "[31m[1mGET /Insert HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:12:44] "[35m[1mPUT /Insert HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:12:47] "[35m[1mPUT /Insert HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:12:56] "[35m[1mPOST /Insert HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:12:57] "[35m[1mPOST /Insert HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:12:58] "[35m[1mPOST /Insert HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:13:00] "[35m[1mPOST /Insert HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:13:08] "[35m[1mPOST /Insert HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/home/mirel/DEVOPS EDU/python.hw/flaskapi.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 300-216-854
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:18:13] "[35m[1mPOST /Insert HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:18:14] "[35m[1mPOST /Insert HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:18:42] "[35m[1mPOST /Insert HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:18:43] "[35m[1mPOST /Insert HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/home/mirel/DEVOPS EDU/python.hw/flaskapi.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 300-216-854
+INFO:werkzeug: * Detected change in '/home/mirel/DEVOPS EDU/python.hw/flaskapi.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 300-216-854
+INFO:werkzeug: * Detected change in '/home/mirel/DEVOPS EDU/python.hw/flaskapi.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 300-216-854
+INFO:werkzeug: * Detected change in '/home/mirel/DEVOPS EDU/python.hw/flaskapi.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 300-216-854
+INFO:werkzeug: * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 300-216-854
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:27:11] "[35m[1mPOST /Insert HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:27:24] "[35m[1mPOST /Insert HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:27:26] "[35m[1mPOST /Insert HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:27:30] "[35m[1mPOST /Insert HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:27:33] "[35m[1mPOST /Insert HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:27:36] "[35m[1mPOST /Insert HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:27:40] "[35m[1mPOST /Insert HTTP/1.1[0m" 500 -

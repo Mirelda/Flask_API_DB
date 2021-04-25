@@ -154,3 +154,95 @@ INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:27:30] "[35m[1mPOST /Insert HTTP/1
 INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:27:33] "[35m[1mPOST /Insert HTTP/1.1[0m" 500 -
 INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:27:36] "[35m[1mPOST /Insert HTTP/1.1[0m" 500 -
 INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:27:40] "[35m[1mPOST /Insert HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 300-216-854
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 20:58:47] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 20:58:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 20:58:53] "[37mGET /Select HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 20:59:19] "[37mGET /Select HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 20:59:44] "[31m[1mGET /Insert HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 21:00:09] "[35m[1mPOST /Insert HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/home/mirel/DEVOPS EDU/python.hw/flaskapi.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 300-216-854
+INFO:werkzeug: * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 300-216-854
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 21:14:11] "[31m[1mGET /Insert HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 21:14:13] "[35m[1mPOST /Insert HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/home/mirel/DEVOPS EDU/python.hw/flaskapi.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 300-216-854
+INFO:werkzeug: * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 300-216-854
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 21:14:52] "[31m[1mGET /Insert HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 21:14:56] "[31m[1mGET /Insert HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 21:15:01] "[35m[1mPOST /Insert HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/home/mirel/DEVOPS EDU/python.hw/flaskapi.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 300-216-854
+INFO:werkzeug: * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 300-216-854
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 21:15:56] "[31m[1mGET /Insert HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 21:16:39] "[31m[1mGET /Insert HTTP/1.1[0m" 405 -
+ERROR:root:1054 (42S22): Unknown column 'lastname' in 'field list'
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 21:16:44] "[31m[1mPOST /Insert HTTP/1.1[0m" 400 -
+ERROR:root:2003 (HY000): Can't connect to MySQL server on '3.143.253.238:3306' (101)
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 21:18:10] "[31m[1mPOST /Insert HTTP/1.1[0m" 400 -
+ERROR:root:2003 (HY000): Can't connect to MySQL server on '3.143.253.238:3306' (101)
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 21:18:18] "[31m[1mPOST /Insert HTTP/1.1[0m" 400 -
+INFO:werkzeug: * Detected change in '/home/mirel/DEVOPS EDU/python.hw/flaskapi.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 300-216-854
+INFO:werkzeug: * Detected change in '/home/mirel/DEVOPS EDU/python.hw/flaskapi.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 300-216-854
+INFO:werkzeug: * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 300-216-854
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 21:21:17] "[31m[1mGET /Insert HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 21:21:23] "[35m[1mPOST /Insert HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/home/mirel/DEVOPS EDU/python.hw/flaskapi.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 300-216-854
+INFO:werkzeug: * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 300-216-854
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 21:22:00] "[37mPOST /Insert HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in '/home/mirel/DEVOPS EDU/python.hw/flaskapi.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 300-216-854
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 21:24:21] "[35m[1mDELETE /Delete HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 21:24:39] "[31m[1mPOST /Delete HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 21:24:44] "[31m[1mPOST /Delete HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 21:24:56] "[31m[1mGET /Delete HTTP/1.1[0m" 405 -
+INFO:werkzeug: * Detected change in '/home/mirel/DEVOPS EDU/python.hw/flaskapi.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 300-216-854
+INFO:werkzeug: * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 300-216-854
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 21:25:49] "[31m[1mGET /Delete HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 21:25:51] "[31m[1mPOST /Delete HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 21:25:53] "[31m[1mPOST /Delete HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 21:25:53] "[31m[1mPOST /Delete HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 21:25:54] "[31m[1mPOST /Delete HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 21:25:54] "[31m[1mPOST /Delete HTTP/1.1[0m" 405 -

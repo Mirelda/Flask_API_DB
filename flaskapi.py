@@ -1,6 +1,7 @@
 from flask import Flask, request, make_response,jsonify
 from mysql.connector import errorcode
 from configparser import ConfigParser
+import requests
 import mysql.connector
 import configparser
 import logging
@@ -47,20 +48,21 @@ def select():
             logging.error(str(e))
             return make_response(jsonify("SOME ERROR OCCURED! PLEASE CHECK LOG FILE."),400)
     
-    return("SUCCESS")
+    print(response)
+    return jsonify(response)
 
 
 @app.route('/Insert', methods= ['POST'])
-def insert(name, lastname, address):
+def insert():
     
     name = request.args.get("name")
-    lastname = request.args.get("lastname")
+    surname = request.args.get("surname")
     address = request.args.get("address")
 
     try:
         mysqldb = connect()
         cursor =  mysqldb.cursor(buffered=True)
-        query = f"""INSERT INTO {config['DEFAULT']['mysql_database']}.{config['DEFAULT']['mysql_table']}(name, lastname, address) VALUES ('{name}','{lastname}','{address}'); """
+        query = f"""INSERT INTO {config['DEFAULT']['mysql_database']}.{config['DEFAULT']['mysql_table']}(name, surname, address) VALUES ('{name}','{surname}','{address}'); """
         cursor.execute(query)
         mysqldb.commit()
         mysqldb.close()
@@ -79,14 +81,18 @@ def insert(name, lastname, address):
             logging.error(str(e))
             return make_response(("SOME ERROR OCCURED! PLEASE CHECK LOG FILE."),400)
             
-    return("SUCCESS")
+    print("Success")
+    return jsonify(Success=True)
 
 
 @app.route('/Delete', methods= ['DELETE'])
 def delete(id):
+    
     name =request.args.get("name")
-    lastname = request.args.get("lastname")
+    surname = request.args.get("surname")
     address = request.args.get("address")
+    id = request.args.get("id")
+
     try:
         mysqldb = connect()
         cursor =  mysqldb.cursor(buffered=True)
@@ -108,11 +114,13 @@ def delete(id):
             print(e)
             logging.error(str(e))
             return make_response(("SOME ERROR OCCURED! PLEASE CHECK LOG FILE."),400)
-            
+
+    print("Success")
+    return jsonify(Success=True)
 
 
 def main():
-    response_insert = insert()
+    response_insert = insert(ali,veli,Istanbul)
     response_select = select()
     response_delete = delete()
     return (response_insert)

@@ -1,8 +1,6 @@
 from flask import Flask, request, make_response
-from configparser import ConfigParser
-import logging
-import os
 from mysql.connector import errorcode
+from configparser import ConfigParser
 import mysql.connector
 import configparser
 import logging

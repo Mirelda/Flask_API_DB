@@ -1,0 +1,80 @@
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2021 23:03:35] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2021 23:03:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ERROR:flaskapi:Exception on /Select [GET]
+Traceback (most recent call last):
+  File "/home/mirel/.local/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mirel/.local/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mirel/.local/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mirel/.local/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/mirel/.local/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/mirel/.local/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/mirel/DEVOPS EDU/python_api_hw/flaskapi.py", line 36, in select
+    query = f"SELECT * FROM {config['DEFAULT']['mysql_database']}.{config['DEFAULT']['DEFAULT']};"
+  File "/usr/lib/python3.9/configparser.py", line 1254, in __getitem__
+    raise KeyError(key)
+KeyError: 'DEFAULT'
+INFO:werkzeug:127.0.0.1 - - [24/Apr/2021 23:04:37] "[35m[1mGET /Select HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 11:21:08] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 12:48:55] "[33mGET / HTTP/1.1[0m" 404 -
+ERROR:root:1045 (28000): Access denied for user 'mirel'@'176.237.198.201' (using password: YES)
+ERROR:flaskapi:Exception on /Select [GET]
+Traceback (most recent call last):
+  File "/home/mirel/.local/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mirel/.local/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mirel/.local/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mirel/.local/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/mirel/.local/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/mirel/.local/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/mirel/DEVOPS EDU/python_api_hw/flaskapi.py", line 51, in select
+    return(response)
+UnboundLocalError: local variable 'response' referenced before assignment
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 12:49:04] "[35m[1mGET /Select HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+ERROR:root:1045 (28000): Access denied for user 'mirel'@'176.237.198.201' (using password: YES)
+ERROR:flaskapi:Exception on /Select [GET]
+Traceback (most recent call last):
+  File "/home/mirel/.local/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mirel/.local/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mirel/.local/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mirel/.local/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/mirel/.local/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/mirel/.local/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/mirel/DEVOPS EDU/python_api_hw/flaskapi.py", line 50, in select
+    return(response)
+UnboundLocalError: local variable 'response' referenced before assignment
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 13:24:46] "[35m[1mGET /Select HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 13:41:58] "[33mGET / HTTP/1.1[0m" 404 -
+ERROR:root:1045 (28000): Access denied for user 'mirel'@'176.237.198.201' (using password: YES)
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 13:42:11] "[31m[1mGET /Select HTTP/1.1[0m" 401 -
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+ERROR:root:1146 (42S02): Table 'akademi.flask1' doesn't exist
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 13:43:51] "[31m[1mGET /Select HTTP/1.1[0m" 400 -
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 13:44:39] "[37mGET /Select HTTP/1.1[0m" 200 -

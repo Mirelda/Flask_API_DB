@@ -1,4 +1,4 @@
-from flask import Flask, request, make_response
+from flask import Flask, request, make_response,jsonify
 from mysql.connector import errorcode
 from configparser import ConfigParser
 import mysql.connector
@@ -27,6 +27,7 @@ def connect():
 
 @app.route('/Select', methods=['GET'])
 def select():
+
     try:
         mysqldb = connect()
         cursor =  mysqldb.cursor(buffered=True)
@@ -44,13 +45,18 @@ def select():
             return make_response(("DB NOT EXIST! PLEASE CHECK LOG FILE."),404)
         else:
             logging.error(str(e))
-            return make_response(("SOME ERROR OCCURED! PLEASE CHECK LOG FILE."),400)
+            return make_response(jsonify("SOME ERROR OCCURED! PLEASE CHECK LOG FILE."),400)
     
     return("SUCCESS")
 
 
 @app.route('/Insert', methods= ['POST'])
 def insert(name, lastname, address):
+    
+    name = request.args.get("name")
+    lastname = request.args.get("lastname")
+    address = request.args.get("address")
+
     try:
         mysqldb = connect()
         cursor =  mysqldb.cursor(buffered=True)
@@ -58,25 +64,28 @@ def insert(name, lastname, address):
         cursor.execute(query)
         mysqldb.commit()
         mysqldb.close()
+    
     except mysql.connector.Error as e:
         if(e.errno == errorcode.ER_ACCESS_DENIED_ERROR):
             logging.error(str(e))
-            return("AUTH ERROR! PLEASE CHECK LOG FILE.")
+            return make_response(("AUTH ERROR! PLEASE CHECK LOG FILE."),401)
             
         elif(e.errno == errorcode.ER_BAD_DB_ERROR):
             logging.error(str(e))
-            return("DB NOT EXIST! PLEASE CHECK LOG FILE.")
+            return make_response(("DB NOT EXIST! PLEASE CHECK LOG FILE."),404)
             
         else:
             print(e)
             logging.error(str(e))
-            return("SOME ERROR OCCURED! PLEASE CHECK LOG FILE.")
+            return make_response(("SOME ERROR OCCURED! PLEASE CHECK LOG FILE."),400)
             
     return("SUCCESS")
 
 
 @app.route('/Delete', methods= ['DELETE'])
 def delete(num):
+
+    num = request.args.get("num")
     try:
         mysqldb = connect()
         cursor =  mysqldb.cursor(buffered=True)
@@ -102,7 +111,7 @@ def delete(num):
 
 
 def main():
-    response_insert = insert(Mir, Dik, Adana)
+    response_insert = insert(Mirel, Dik, Adana)
     response_select = select()
     response_delete = delete(1)
     return (response_insert)

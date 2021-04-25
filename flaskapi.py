@@ -112,9 +112,9 @@ def delete(id):
 
 
 def main():
-    response_insert = insert(Mirel, Dik, Adana)
+    response_insert = insert()
     response_select = select()
-    response_delete = delete(1)
+    response_delete = delete()
     return (response_insert)
 
 

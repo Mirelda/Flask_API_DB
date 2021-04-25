@@ -48,8 +48,7 @@ def select():
             logging.error(str(e))
             return make_response(jsonify("SOME ERROR OCCURED! PLEASE CHECK LOG FILE."),400)
     
-    print(response)
-    return jsonify(response)
+
 
 
 @app.route('/Insert', methods= ['POST'])
@@ -81,22 +80,21 @@ def insert():
             logging.error(str(e))
             return make_response(("SOME ERROR OCCURED! PLEASE CHECK LOG FILE."),400)
             
-    print("Success")
-    return jsonify(Success=True)
+   
 
 
 @app.route('/Delete', methods= ['DELETE'])
-def delete(id):
+def delete(idnum):
     
-    name =request.args.get("name")
-    surname = request.args.get("surname")
-    address = request.args.get("address")
-    id = request.args.get("id")
+    #name =request.args.get("name")
+    #surname = request.args.get("surname")
+    #address = request.args.get("address")
+    idnum = request.args.get("id")
 
     try:
         mysqldb = connect()
         cursor =  mysqldb.cursor(buffered=True)
-        query = f'''DELETE FROM {config['DEFAULT']['mysql_database']}.{config['DEFAULT']['mysql_table']}(name, lastname, address) WHERE id = {id}; '''
+        query = f'''DELETE FROM {config['DEFAULT']['mysql_database']}.{config['DEFAULT']['mysql_table']}(name, lastname, address) WHERE id = {idnum}; '''
         cursor.execute(query)
         mysqldb.commit()
         mysqldb.close()
@@ -115,14 +113,12 @@ def delete(id):
             logging.error(str(e))
             return make_response(("SOME ERROR OCCURED! PLEASE CHECK LOG FILE."),400)
 
-    print("Success")
-    return jsonify(Success=True)
 
 
 def main():
-    response_insert = insert(ali,veli,Istanbul)
+    response_insert = insert()
     response_select = select()
-    response_delete = delete()
+    response_delete = delete(2)
     return (response_insert)
 
 

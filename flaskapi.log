@@ -246,3 +246,56 @@ INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 21:25:53] "[31m[1mPOST /Delete HTTP/1
 INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 21:25:53] "[31m[1mPOST /Delete HTTP/1.1[0m" 405 -
 INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 21:25:54] "[31m[1mPOST /Delete HTTP/1.1[0m" 405 -
 INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 21:25:54] "[31m[1mPOST /Delete HTTP/1.1[0m" 405 -
+INFO:werkzeug: * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 300-216-854
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 21:30:49] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 21:30:54] "[31m[1mGET /Delete HTTP/1.1[0m" 405 -
+ERROR:root:1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(name, lastname, address) WHERE id = None' at line 1
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 21:31:03] "[31m[1mDELETE /Delete HTTP/1.1[0m" 400 -
+INFO:werkzeug: * Detected change in '/home/mirel/DEVOPS EDU/python.hw/flaskapi.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 300-216-854
+INFO:werkzeug: * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 300-216-854
+ERROR:root:1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(name, lastname, address) WHERE id = None' at line 1
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 21:32:15] "[31m[1mDELETE /Delete HTTP/1.1[0m" 400 -
+INFO:werkzeug: * Detected change in '/home/mirel/DEVOPS EDU/python.hw/flaskapi.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 300-216-854
+INFO:werkzeug: * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 300-216-854
+ERROR:root:1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(name, lastname, address) WHERE ID = None' at line 1
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 21:34:07] "[31m[1mDELETE /Delete HTTP/1.1[0m" 400 -
+ERROR:root:1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(name, lastname, address) WHERE ID = None' at line 1
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 21:34:09] "[31m[1mDELETE /Delete HTTP/1.1[0m" 400 -
+INFO:werkzeug: * Detected change in '/home/mirel/DEVOPS EDU/python.hw/flaskapi.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 300-216-854
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 21:34:40] "[35m[1mDELETE /Delete HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/home/mirel/DEVOPS EDU/python.hw/flaskapi.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 300-216-854
+INFO:werkzeug: * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 300-216-854
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 21:35:21] "[35m[1mDELETE /Delete HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 21:35:22] "[35m[1mDELETE /Delete HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/home/mirel/DEVOPS EDU/python.hw/flaskapi.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 300-216-854
+INFO:werkzeug: * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 300-216-854

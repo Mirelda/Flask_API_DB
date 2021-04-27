@@ -86,17 +86,17 @@ def insert():
 
 
 @app.route('/Delete', methods= ['DELETE'])
-def delete(id):
+def delete(number):
     
     name =request.args.get("name")
     surname = request.args.get("surname")
     address = request.args.get("address")
-    id = request.args.get("id")
+    number = request.args.get("id")
 
     try:
         mysqldb = connect()
         cursor =  mysqldb.cursor(buffered=True)
-        query = f'''DELETE FROM {config['DEFAULT']['mysql_database']}.{config['DEFAULT']['mysql_table']}(name, lastname, address, id) WHERE ID = {id}; '''
+        query = f'''DELETE FROM {config['DEFAULT']['mysql_database']}.{config['DEFAULT']['mysql_table']}(name, lastname, address, id) WHERE ID = {number}; '''
         cursor.execute(query)
         mysqldb.commit()
         mysqldb.close()
